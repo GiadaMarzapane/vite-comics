@@ -1,17 +1,16 @@
 <script>
 
 export default {
-    name: 'AppHeader'
+    name: 'AppMain'
 }
 
 </script>
 
 <template>
-    <header>
+    <main>
 
-    </header>
+    </main>
 </template>
 
 <style lang="scss" scoped>
-
 </style>
