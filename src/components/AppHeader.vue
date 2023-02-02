@@ -8,7 +8,7 @@ export default {
 
 <template>
     <header>
-
+        header
     </header>
 </template>
 
