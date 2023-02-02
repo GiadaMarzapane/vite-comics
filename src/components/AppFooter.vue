@@ -13,6 +13,7 @@ export default {
                 <nav>
                     <ul>
                         <li>
+                            
                             <img src="../img/buy-comics-digital-comics.png" alt="digital_comics">
                             <a href="#">digital comics</a>
                         </li>
@@ -140,13 +141,30 @@ export default {
                 </div>
                 <img src="../img/dc-logo-bg.png" alt="">
             </section>
+            <section class="third-section">
+                <div>
+                    <div>
+                        <button>
+                            sign-up now!
+                        </button>
+                    </div>
+                    <div>
+                        <a href="#">follow us</a>
+                        <img src="../img/footer-facebook.png" alt="facebook">
+                        <img src="../img/footer-twitter.png" alt="twitter">
+                        <img src="../img/footer-youtube.png" alt="youtube">
+                        <img src="../img/footer-pinterest.png" alt="pinterest">
+                        <img src="../img/footer-periscope.png" alt="periscope">
+                    </div>
+                </div>
+            </section>
         </div>
     </footer>
 </template>
 
 <style lang="scss" scoped>
 footer{
-    height: 70vh;
+    height: 85vh;
     background-image: url('../img/footer-bg.jpg');
     div.container{
         height: 100%;
@@ -224,6 +242,41 @@ footer{
                     height: 65vh;
                     align-self: center;
                 }
+        }
+        section.third-section{
+            height: 15vh;
+            background-color: #303030;
+            div{
+                max-width: 1000px;
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                div:first-child{
+                    flex-grow: 1;
+                    button{
+                        color: white;
+                        text-transform: uppercase;
+                        border: 2px solid #0282f9;
+                        padding: 10px 15px;
+                        background-color: transparent;
+                        cursor: pointer;
+                    }
+                }
+                div:last-child{
+                    a{
+                        text-decoration: none;
+                        color: #0282f9;
+                        text-transform: uppercase;
+                        margin-right: 5px;
+                    }
+                    img{
+                        height: 25px;
+                        margin: 0 5px;
+                    }
+                }
+            }
         }
     }
 }
