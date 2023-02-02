@@ -50,7 +50,7 @@ export default {
 
 <style lang="scss" scoped>
 header{
-        height: 70px;
+        height: 15vh;
         padding: 10px;
         div{
             max-width: 1000px;
