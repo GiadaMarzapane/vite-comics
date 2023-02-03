@@ -108,15 +108,30 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-    main{
+main{
         min-height: 85vh;
         background-color: #1c1c1c;
+        padding-bottom: 20px;
         section.jumbotron{
             height: 40vh;
             background-image: url('../img/jumbotron.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             margin-bottom: 30px;
+            position: relative;
+            button{
+                background-color: #0282f9;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 600;
+                padding: 10px 15px;
+                font-size: 1.2rem;
+                border: none;
+                position: absolute;
+                bottom: -10%;
+                left: 1%;
+                cursor: pointer;
+            }
         }
         div.container{
             max-width: 1000px;
@@ -124,6 +139,18 @@ export default {
             section{
                 display: flex;
                 flex-wrap: wrap;
+            }
+            div{
+                text-align: center;
+                button{
+                    background-color: #0282f9;
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: 600;
+                    padding: 10px 45px;
+                    border: none;
+                    cursor: pointer;
+                }
             }
         }
     }
