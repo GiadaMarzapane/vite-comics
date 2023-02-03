@@ -81,7 +81,8 @@ header{
                     justify-content: center;
                     li{
                         list-style: none;
-                        padding: 30px 15px;
+                        padding: 0px 15px;
+                        line-height: calc(15vh - 5px);
                         &:hover{
                             color: #0282f9;
                             border-bottom: 5px solid #0282f9;
