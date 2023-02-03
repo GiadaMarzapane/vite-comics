@@ -129,7 +129,7 @@ main{
                 border: none;
                 position: absolute;
                 bottom: -10%;
-                left: 1%;
+                left: 10%;
                 cursor: pointer;
             }
         }
