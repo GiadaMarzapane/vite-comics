@@ -91,25 +91,32 @@ export default {
 <template>
     <main>
         <section class="jumbotron">
+            <button>current series</button>
         </section>
         <div class="container">
             <section>
-                <CardComponent/>
+                <CardComponent
+                v-for="element in comics"
+                :imgSrc="element.thumb"
+                :imgTitle="element.series" />
             </section>
+            <div>
+                <button>Load more</button>
+            </div>
         </div>
     </main>
 </template>
 
 <style lang="scss" scoped>
     main{
-        height: 85vh;
+        min-height: 85vh;
         background-color: #1c1c1c;
-        // padding: 30px 0;
         section.jumbotron{
-            height: 40%;
+            height: 40vh;
             background-image: url('../img/jumbotron.jpg');
             background-size: cover;
             background-repeat: no-repeat;
+            margin-bottom: 30px;
         }
         div.container{
             max-width: 1000px;
@@ -117,16 +124,6 @@ export default {
             section{
                 display: flex;
                 flex-wrap: wrap;
-                div.card{
-                    width: calc(100% / 6);
-                    img{
-                        height: 50%;
-                    }
-                    h4{
-                        text-transform: uppercase;
-                        color: white;
-                    }
-                }
             }
         }
     }
