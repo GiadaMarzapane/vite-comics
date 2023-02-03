@@ -1,7 +1,45 @@
 <script>
 
 export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+    data(){
+        return{
+            headerLinks: [
+                {
+                    linkName: 'characters',
+                    hrefLink: '#'
+                }, {
+                    linkName: 'comics',
+                    hrefLink: '#'
+                }, {
+                    linkName: 'movies',
+                    hrefLink: '#'
+                }, {
+                    linkName: 'tv',
+                    hrefLink: '#'
+                }, {
+                    linkName: 'games',
+                    hrefLink: '#'
+                }, {
+                    linkName: 'collectibles',
+                    hrefLink: '#'
+                }, {
+                    linkName: 'videos',
+                    hrefLink: '#'
+                }, {
+                    linkName: 'fans',
+                    hrefLink: '#'
+                }, {
+                    linkName: 'news',
+                    hrefLink: '#'
+                }, {
+                    linkName: 'shop',
+                    hrefLink: '#'
+                }
+                
+            ]
+        }
+    }
 }
 
 </script>
@@ -12,35 +50,10 @@ export default {
             <img src="../img/dc-logo.png" alt="">
             <nav>
                 <ul>
-                    <li>
-                        <a href="#">characters</a>
-                    </li>
-                    <li>
-                        <a href="#">comics</a>
-                    </li>
-                    <li>
-                        <a href="#">movies</a>
-                    </li>
-                    <li>
-                        <a href="#">tv</a>
-                    </li>
-                    <li>
-                        <a href="#">games</a>
-                    </li>
-                    <li>
-                        <a href="#">collectibles</a>
-                    </li>
-                    <li>
-                        <a href="#">videos</a>
-                    </li>
-                    <li>
-                        <a href="#">fans</a>
-                    </li>
-                    <li>
-                        <a href="#">news</a>
-                    </li>
-                    <li>
-                        <a href="#">shop</a>
+                    <li  v-for="element in headerLinks">
+                        <a :href="element.hrefLink">
+                            {{ element.linkName }}
+                        </a>
                     </li>
                 </ul>
             </nav>
